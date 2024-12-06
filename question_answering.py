@@ -19,16 +19,16 @@ import google.generativeai as genai  # Add this import
 router = APIRouter()
 
 # Configuration
-SERP_API_KEY = "cc329a4399d9313ce82b504960713781f5b25e2f24230f725b385028b1a07e60"
-GEMINI_API_KEY = "AIzaSyBV_DjZzUu-0HW__oNAlQkAQ7A28QznpZ8"
-OPENAI_API_KEY = "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"
-SERPER_API_KEY = "dbc8355c398b72eb302271791847f80980105f9d"
+SERP_API_KEY = "Enter your Serp API Key"
+GEMINI_API_KEY = "Enter your Gemini API Key"
+OPENAI_API_KEY = "Enter your OpenAI API Key"
+SERPER_API_KEY = "Enter your Serper API Key"
 
 os.environ['GEMINI_API_KEY'] = GEMINI_API_KEY
 os.environ["TESSDATA_PREFIX"] = "/usr/share/tesseract/tessdata/"
 os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 
-pw.set_license_key("FC57D6-8625E4-741281-43BB11-1D79E6-V3")
+pw.set_license_key("Enter your Pathway License Key")
 genai.configure(api_key=GEMINI_API_KEY)
 
 # Setup Pathway components
