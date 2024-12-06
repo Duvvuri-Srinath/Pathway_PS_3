@@ -19,8 +19,8 @@ app.add_middleware(
 app.include_router(file_upload_router)
 app.include_router(question_answering_router)
 
-pw.set_license_key("FC57D6-8625E4-741281-43BB11-1D79E6-V3")
-SERP_API_KEY = "cc329a4399d9313ce82b504960713781f5b25e2f24230f725b385028b1a07e60"
+pw.set_license_key("Enter your Pathway License Key")
+SERP_API_KEY = "Enter your Serp API Key"
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=9000)
