@@ -125,14 +125,12 @@ This system processes user queries by retrieving relevant documents, classifying
    - Add the required pdf file in the data directory (Context PDF)
 
 3. Run the Application:
-   - ```python main.py```
 
    - If you are using docker then run the following :
 
         - ```docker build -t my-pathway-app .```
-
-        - ```docker run -it --rm --name my-pathway-app my-pathway-app python main.py```
-
+        - ```docker run -it --rm -p 9000:9000 -v //c/Users/ADMIN/Downloads/ps_3_pathway_3/ps_3_pathway/data:/app/data --name my-pathway-app my-pathway-app```
+     
 4. Query Input:
 
    - Type questions in the command-line interface.
